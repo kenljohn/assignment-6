@@ -88,9 +88,9 @@ public class SOEFrame extends JFrame
         m_inputField.setMaximumSize(new Dimension(80, 23));
         m_inputField.setPreferredSize(new Dimension(80, 23) );
         
-        m_goButton.setMinimumSize(new Dimension(160, 30) );
-        m_goButton.setMaximumSize(new Dimension(160, 30));
-        m_goButton.setPreferredSize(new Dimension(160, 30) );
+        m_goButton.setMinimumSize(new Dimension(200, 30) );
+        m_goButton.setMaximumSize(new Dimension(200, 30));
+        m_goButton.setPreferredSize(new Dimension(200, 30) );
    
         topPanel.add(inputLabel, new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.NONE, new Insets(
