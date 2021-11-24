@@ -29,7 +29,7 @@ public class SOEApp
 		m_frame.addWindowListener( new WindowAdapter()
         {
             @Override
-            public void windowClosing( WindowEvent e )
+            public void windowClosing(WindowEvent e)
             {
                 System.exit( 0 );
             }
