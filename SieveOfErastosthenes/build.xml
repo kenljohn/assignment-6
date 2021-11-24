@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build-deploy" name="SOE">
+
+	<property name="src.dir"     value="src"/>
+	<property name="build.dir"   value="build"/>
+	<property name="classes.dir" value="${build.dir}/classes"/>	
+	<property name="jar.dir" 	 value="${build.dir}/jar"/>	
+	
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/soe.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="soe.SOEApp"/>
+            </manifest>
+        </jar>
+    </target>
+	
+    <target depends="clean,compile,jar" name="build-deploy"/>
+
+    <target name="run">
+        <java jar="build/jar/soe.jar" failonerror="true" fork="true"/>
+    </target>
+	
+</project>
