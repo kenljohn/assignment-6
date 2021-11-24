@@ -77,20 +77,20 @@ public class SOEFrame extends JFrame
         // Setup the top/input panel
         JPanel topPanel = new JPanel();
         topPanel.setLayout(new GridBagLayout());
-        topPanel.setMinimumSize(new Dimension(240, 86) );
+        topPanel.setMinimumSize(new Dimension(240, 86));
         topPanel.setMaximumSize(new Dimension(screenSize.width, 86));
-        topPanel.setPreferredSize(new Dimension(480, 86) );
+        topPanel.setPreferredSize(new Dimension(480, 86));
         topPanel.setBorder(BorderFactory.createEtchedBorder());
         
         JLabel inputLabel = new JLabel("Enter integer (> 1):  ");
         
         m_inputField.setMinimumSize(new Dimension(80, 23) );
         m_inputField.setMaximumSize(new Dimension(80, 23));
-        m_inputField.setPreferredSize(new Dimension(80, 23) );
+        m_inputField.setPreferredSize(new Dimension(80, 23));
         
-        m_goButton.setMinimumSize(new Dimension(200, 30) );
+        m_goButton.setMinimumSize(new Dimension(200, 30));
         m_goButton.setMaximumSize(new Dimension(200, 30));
-        m_goButton.setPreferredSize(new Dimension(200, 30) );
+        m_goButton.setPreferredSize(new Dimension(200, 30));
    
         topPanel.add(inputLabel, new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0,
                 GridBagConstraints.CENTER, GridBagConstraints.NONE, new Insets(
