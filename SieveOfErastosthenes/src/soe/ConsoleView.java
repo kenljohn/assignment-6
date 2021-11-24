@@ -88,7 +88,7 @@ public class ConsoleView extends JPanel
 			{
 				// Display popup menu on right mouse button click
 		        if (SwingUtilities.isRightMouseButton( e ))
-		            m_popupMenu.show( e.getComponent(), e.getX(), e.getY() );
+		            m_popupMenu.show(e.getComponent(), e.getX(), e.getY());
 			}
 
 			@Override
