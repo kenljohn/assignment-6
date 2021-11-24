@@ -121,7 +121,7 @@ public class ConsoleView extends JPanel
             }
 
             @Override
-            public void removeUpdate( DocumentEvent e )
+            public void removeUpdate(DocumentEvent e)
             {
                 m_msgArea.setCaretPosition(
                     m_msgArea.getDocument().getLength() );
