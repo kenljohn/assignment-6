@@ -130,7 +130,7 @@ public class ConsoleView extends JPanel
         
         // Clear the text area when the 'clear menu' context menu 
         // option is selected
-        m_clearMenuItem.addActionListener( new ActionListener()
+        m_clearMenuItem.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed( ActionEvent ae )
