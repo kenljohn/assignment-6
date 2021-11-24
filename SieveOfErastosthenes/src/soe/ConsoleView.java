@@ -63,7 +63,7 @@ public class ConsoleView extends JPanel
         m_popupMenu.add( m_clearMenuItem );
         m_scrollPane.setBorder(BorderFactory.createEmptyBorder());
         m_scrollPane.getViewport().add(m_msgArea, (Object) null);
-        add( m_scrollPane, BorderLayout.CENTER );
+        add(m_scrollPane, BorderLayout.CENTER );
     }
 
     /*
