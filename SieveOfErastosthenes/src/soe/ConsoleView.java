@@ -107,7 +107,7 @@ public class ConsoleView extends JPanel
         m_msgArea.getDocument().addDocumentListener( new DocumentListener()
         {
             @Override
-            public void changedUpdate( DocumentEvent e )
+            public void changedUpdate(DocumentEvent e)
             {
                 m_msgArea.setCaretPosition(
                     m_msgArea.getDocument().getLength() );
