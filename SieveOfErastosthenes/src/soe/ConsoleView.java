@@ -60,7 +60,7 @@ public class ConsoleView extends JPanel
         System.setErr(new PrintStream( errStream, true ));
         m_msgArea.setFont(new Font("Courier New", 0, 12 ));
         m_msgArea.setEditable(false);
-        m_popupMenu.add( m_clearMenuItem );
+        m_popupMenu.add(m_clearMenuItem );
         m_scrollPane.setBorder(BorderFactory.createEmptyBorder());
         m_scrollPane.getViewport().add(m_msgArea, (Object) null);
         add(m_scrollPane, BorderLayout.CENTER );
