@@ -55,7 +55,7 @@ public class ConsoleView extends JPanel
      */
     private void init() throws Exception
     {
-        setLayout( new BorderLayout());
+        setLayout(new BorderLayout());
         System.setOut( new PrintStream( outStream, true ));
         System.setErr( new PrintStream( errStream, true ));
         m_msgArea.setFont(new Font( "Courier New", 0, 12 ));
