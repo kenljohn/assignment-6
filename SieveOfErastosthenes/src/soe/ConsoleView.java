@@ -44,7 +44,7 @@ public class ConsoleView extends JPanel
             init();
             defineCallbacks();
         }
-        catch ( Exception e )
+        catch (Exception e)
         {
             e.printStackTrace();
         }
@@ -58,10 +58,10 @@ public class ConsoleView extends JPanel
         setLayout( new BorderLayout() );
         System.setOut( new PrintStream( outStream, true ) );
         System.setErr( new PrintStream( errStream, true ) );
-        m_msgArea.setFont(new Font( "Courier New", 0, 12 ) );
+        m_msgArea.setFont(new Font( "Courier New", 0, 12 ));
         m_msgArea.setEditable(false );
         m_popupMenu.add( m_clearMenuItem );
-        m_scrollPane.setBorder(BorderFactory.createEmptyBorder() );
+        m_scrollPane.setBorder(BorderFactory.createEmptyBorder());
         m_scrollPane.getViewport().add(m_msgArea, (Object) null);
         add( m_scrollPane, BorderLayout.CENTER );
     }
